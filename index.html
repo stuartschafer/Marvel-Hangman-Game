@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>MARVEL Hangman Game</title>
+
+    <!-- This links the reset CSS sheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- This links the styling CSS sheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- This links the different fonts from Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Allan|Bungee+Inline" rel="stylesheet">
+	
+	<!-- This links the javascript -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+  <body>
+
+
+<section id="marvelarea">
+	<img src="assets/images/marvel.png" style="width:250px;height:100px;">
+	<h1 id="hangman">Hangman</h1>
+	<h4>Now with 41 heros and villans!</h4>
+</section>
+
+
+				<div id="marvelarea2">
+					<img id="marveluniverse" src="assets/images/marveluniverse.png" style="width:500px;height:300px;padding-bottom:10px;">
+				</div>
+
+
+	<h3>Epic hangman music...</h3>
+	<div id="music">
+		<audio src="assets/audio/goku.mp3" controls> </audio>
+		<audio src="assets/audio/ninja.mp3" controls> </audio>
+		<audio src="assets/audio/walt.mp3" controls> </audio>
+		<audio src="assets/audio/columbus.mp3" controls> </audio>
+		<audio src="assets/audio/ellen.mp3" controls> </audio>
+	</div>
+
+	<h1>WINS: <span id="wins"></span></h1>
+	<h1>LOSSES: <span id="losses"></span></h1>
+	<br>
+	<h1>Word:   <span id="blankWordOnScreen"></span></h1>
+	
+	<h2>Guesses remaining: <span id="guesses">12</span></h2>
+	
+	<h2>Letters guessed: <span id="lettersGuessed"> </span></h2>
+	<br>
+	
+	<h1><span id="outcome">PRESS ANY KEY TO BEGIN</span></h1>
+	<h1><span id="outcomeAgain"></span></h1>
+	<img id="userWins" src="" style="height: 300px">
+
+    
+    </body>
+</html>

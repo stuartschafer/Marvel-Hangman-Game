@@ -1,0 +1,40 @@
+body { background-image: url("../images/background_image.jpeg");
+       color: white;
+       font-family: 'Allan', cursive; }
+
+h1, h2, h3 { font-family: 'Allan', cursive; }
+
+h1 { font-size: 60px; }
+
+h2 { font-size: 40px; }
+
+h4 { margin-left: 30px;
+	font-size: 20px;
+	color: cyan; }
+
+
+#guesses, #lettersGuessed, #blankWordOnScreen { color: aqua;
+					        font-family: 'Bungee Inline', cursive;
+						font-size: 40px; }
+
+#blankWordOnScreen { font-size: 50px; }
+
+
+#marvelarea { background-color: blue;
+	      float: left;
+	      margin-top: 20px;
+	      padding-bottom: 20px; }
+
+#marvelarea2 { float: left; }
+
+#wins, #losses { color: red;
+		 font-family: 'Bungee Inline', cursive; }
+
+#hangman { margin-left: 75px;
+	   font-size: 30px; }
+
+#userWins { position: absolute;
+	    right: 20px;
+	    bottom: 20px; }
+
+#outcome { font-size: 40px; }
