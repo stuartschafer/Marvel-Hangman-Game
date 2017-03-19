@@ -12,7 +12,14 @@
 // This starts off the game, and happens every time a new word is displayed
  	  function begin (gameStart) {
       
-    var options = ["THE WINTER SOLDIER", "THOR", "CAPTAIN AMERICA", "GUARDIANS OF THE GALAXY", "DOCTOR STRANGE", "TONY STARK", "BRUCE BANNER", "LOKI", "PEGGY CARTER", "THANOS", "NICK FURY", "GROOT", "SUPERMAN", "DRAX THE DESTROYER", "ULTRON", "BLACK WIDOW", "STORM", "SCARLET WITCH", "JEAN GREY", "ELEKTRA", "ROGUE", "MAGNETO", "DORMAMMU", "GREEN GOBLIN", "HUMAN TORCH", "INVISIBLE WOMAN", "GHOST RIDER", "LUKE CAGE", "SILVER SURFER", "CYCLOPS", "WOLVERINE", "DEADPOOL", "CAPTAIN MARVEL", "HAWKEYE", "DAREDEVIL", "HOWARD THE DUCK", "BLADE", "PHIL COULSON", "RONAN THE ACCUSER", "APOCALYPSE", "INCREDIBLE HULK" ];
+    var options = [ "THE WINTER SOLDIER", "THOR", "CAPTAIN AMERICA", "GUARDIANS OF THE GALAXY",
+    "DOCTOR STRANGE", "TONY STARK", "BRUCE BANNER", "LOKI", "PEGGY CARTER", "THANOS",
+    "NICK FURY", "GROOT", "SUPERMAN", "DRAX THE DESTROYER", "ULTRON", "BLACK WIDOW",
+    "STORM", "SCARLET WITCH", "JEAN GREY", "ELEKTRA", "ROGUE", "MAGNETO", "DORMAMMU",
+    "GREEN GOBLIN", "HUMAN TORCH", "INVISIBLE WOMAN", "GHOST RIDER", "LUKE CAGE",
+    "SILVER SURFER", "CYCLOPS", "WOLVERINE", "DEADPOOL", "CAPTAIN MARVEL", "HAWKEYE",
+    "DAREDEVIL", "HOWARD THE DUCK", "BLADE", "PHIL COULSON", "RONAN THE ACCUSER", "APOCALYPSE",
+    "INCREDIBLE HULK" ];
 
     var secretWord = options[Math.floor(Math.random() * options.length)];
     var l = secretWord.length;
@@ -22,6 +29,7 @@
     var guesses = 12;
     var win = 0;
     var gameOver = 0;
+
 	
     // This function controls the user's guesses inside of the game
     document.onkeyup = function(start) {
@@ -29,10 +37,6 @@
     	document.getElementById("outcome").innerHTML = "";
     	document.getElementById("outcomeAgain").innerHTML = "";
     	document.getElementById("userWins").src="";
-
-    // This lets me know what word and how many letters it has. Will be deleted later.
-    // alert("The secret word is " + secretWord + ". It has " + l + " letters in it.");
-    
 
 // This loop creates the blank tiles (_) for the secretWord
 for (var i = 0; i < l; i++) {
@@ -134,7 +138,6 @@ document.onkeyup = function(event) {
 
     	}
 
-
 	// If the user does not enter a letter, this sound will play
 	else { noLetter.play(); }
 
@@ -175,91 +178,32 @@ function userWins() {
     document.getElementById("lettersGuessed").innerHTML = " ";
     guesses = 12;
     document.getElementById("guesses").innerHTML = guesses;
-    
-    if (secretWord === "THE WINTER SOLDIER") 
-    	{ document.getElementById("userWins").src="assets/images/TheWinterSoldier.png"; }
-    else if (secretWord === "THOR")
-    	{ document.getElementById("userWins").src="assets/images/Thor.jpg"; }
-    else if (secretWord === "CAPTAIN AMERICA")
-    	{ document.getElementById("userWins").src="assets/images/CaptainAmerica.jpg"; }
-    else if (secretWord === "GUARDIANS OF THE GALAXY")
-    	{ document.getElementById("userWins").src="assets/images/GuardiansoftheGalaxy.jpg";
-    	  document.getElementById("userWins").style.height = "200px";}
-    else if (secretWord === "DOCTOR STRANGE")
-    	{ document.getElementById("userWins").src="assets/images/DrStrange.jpeg"; }
-    else if (secretWord === "TONY STARK")
-    	{ document.getElementById("userWins").src="assets/images/TonyStark.jpg"; }
-    else if (secretWord === "BRUCE BANNER")
-    	{ document.getElementById("userWins").src="assets/images/BruceBanner.jpg"; }
-    else if (secretWord === "LOKI")
-    	{ document.getElementById("userWins").src="assets/images/Loki.jpg"; }
-    else if (secretWord === "PEGGY CARTER")
-    	{ document.getElementById("userWins").src="assets/images/PeggyCarter.jpg"; }
-    else if (secretWord === "THANOS")
-    	{ document.getElementById("userWins").src="assets/images/Thanos.jpg"; }
-    else if (secretWord === "NICK FURY")
-    	{ document.getElementById("userWins").src="assets/images/NickFury.jpg"; }
-    else if (secretWord === "GROOT")
-    	{ document.getElementById("userWins").src="assets/images/Groot.jpg"; }
-    else if (secretWord === "SUPERMAN")
-    	{ document.getElementById("userWins").src="assets/images/Superman.jpg"; }
-    else if (secretWord === "DRAX THE DESTROYER")
-    	{ document.getElementById("userWins").src="assets/images/DraxtheDestroyer.jpg"; }
-    else if (secretWord === "ULTRON")
-    	{ document.getElementById("userWins").src="assets/images/Ultron.jpg"; }
-    else if (secretWord === "BLACK WIDOW")
-    	{ document.getElementById("userWins").src="assets/images/BlackWidow.jpg"; }
-    else if (secretWord === "STORM")
-    	{ document.getElementById("userWins").src="assets/images/Storm.jpg"; }
-    else if (secretWord === "SCARLET WITCH")
-    	{ document.getElementById("userWins").src="assets/images/ScarletWitch.jpg"; }
-    else if (secretWord === "JEAN GREY")
-    	{ document.getElementById("userWins").src="assets/images/JeanGrey.jpg"; }
-    else if (secretWord === "ELEKTRA")
-    	{ document.getElementById("userWins").src="assets/images/Elektra.jpg"; }
-    else if (secretWord === "MAGNETO")
-    	{ document.getElementById("userWins").src="assets/images/Magneto.jpeg"; }
-    else if (secretWord === "DORMAMMU")
-    	{ document.getElementById("userWins").src="assets/images/Dormammu.jpeg"; }
-    else if (secretWord === "GREEN GOBLIN")
-    	{ document.getElementById("userWins").src="assets/images/GreenGoblin.jpg"; }
-    else if (secretWord === "HUMAN TORCH")
-    	{ document.getElementById("userWins").src="assets/images/HumanTorch.jpg"; }
-    else if (secretWord === "INVISIBLE WOMAN")
-    	{ document.getElementById("userWins").src="assets/images/InvisibleWoman.jpg"; }
-    else if (secretWord === "GHOST RIDER")
-    	{ document.getElementById("userWins").src="assets/images/GhostRider.jpg"; }
-    else if (secretWord === "LUKE CAGE")
-    	{ document.getElementById("userWins").src="assets/images/LukeCage.jpg"; }
-    else if (secretWord === "SILVER SURFER")
-    	{ document.getElementById("userWins").src="assets/images/SilverSurfer.jpg"; }
-    else if (secretWord === "CYCLOPS")
-    	{ document.getElementById("userWins").src="assets/images/Cyclops.jpg"; }
-    else if (secretWord === "WOLVERINE")
-    	{ document.getElementById("userWins").src="assets/images/Wolverine.jpg"; }
-    else if (secretWord === "DEADPOOL")
-    	{ document.getElementById("userWins").src="assets/images/Deadpool.jpg"; }
-    else if (secretWord === "CAPTAIN MARVEL")
-    	{ document.getElementById("userWins").src="assets/images/CaptainMarvel.jpg";
-    	  document.getElementById("userWins").style.width = "450px";
-    	  document.getElementById("userWins").style.height = "225px"; }
-    else if (secretWord === "HAWKEYE")
-    	{ document.getElementById("userWins").src="assets/images/Hawkeye.jpg"; }
-    else if (secretWord === "DAREDEVIL")
-    	{ document.getElementById("userWins").src="assets/images/Daredevil.jpg"; }
-    else if (secretWord === "HOWARD THE DUCK")
-    	{ document.getElementById("userWins").src="assets/images/HowardtheDuck.jpg"; }
-    else if (secretWord === "BLADE")
-    	{ document.getElementById("userWins").src="assets/images/Blade.jpg"; }
-    else if (secretWord === "PHIL COULSON")
-    	{ document.getElementById("userWins").src="assets/images/PhilCoulson.jpg"; }
-    else if (secretWord === "RONAN THE ACCUSER")
-    	{ document.getElementById("userWins").src="assets/images/RonantheAccuser.jpg"; }
-    else if (secretWord === "APOCALYPSE")
-    	{ document.getElementById("userWins").src="assets/images/Apocalypse.jpg"; }
-    else if (secretWord === "INCREDIBLE HULK")
-        { document.getElementById("userWins").src="assets/images/hulk.jpg"; }
-    else { document.getElementById("userWins").src=""; }
+
+// This shows the picture if the user guesses the correct secret word
+var word = { "THE WINTER SOLDIER": "assets/images/TheWinterSoldier.png",
+    "THOR": "assets/images/Thor.jpg", "CAPTAIN AMERICA": "assets/images/CaptainAmerica.jpg",
+    "GUARDIANS OF THE GALAXY": "assets/images/GuardiansoftheGalaxy.jpg",
+    "DOCTOR STRANGE": "assets/images/DrStrange.jpeg", "TONY STARK": "assets/images/TonyStark.jpg",
+    "BRUCE BANNER": "assets/images/BruceBanner.jpg", "LOKI": "assets/images/Loki.jpg",
+    "PEGGY CARTER": "assets/images/PeggyCarter.jpg", "THANOS": "assets/images/Thanos.jpg",
+    "NICK FURY": "assets/images/NickFury.jpg", "GROOT": "assets/images/Groot.jpg",
+    "SUPERMAN": "assets/images/Superman.jpg", "DRAX THE DESTROYER": "assets/images/DraxtheDestroyer.jpg",
+    "ULTRON": "assets/images/Ultron.jpg", "BLACK WIDOW": "assets/images/BlackWidow.jpg",
+    "STORM": "assets/images/Storm.jpg", "SCARLET WITCH": "assets/images/ScarletWitch.jpg",
+    "JEAN GREY": "assets/images/JeanGrey.jpg", "ELEKTRA": "assets/images/Elektra.jpg",
+    "ROGUE": "assets/images/Rogue.jpg", "MAGNETO": "assets/images/Magneto.jpeg",
+    "DORMAMMU": "assets/images/Dormammu.jpeg", "GREEN GOBLIN": "assets/images/GreenGoblin.jpg",
+    "HUMAN TORCH": "assets/images/HumanTorch.jpg", "INVISIBLE WOMAN": "assets/images/InvisibleWoman.jpg",
+    "GHOST RIDER": "assets/images/GhostRider.jpg", "LUKE CAGE": "assets/images/LukeCage.jpg",
+    "SILVER SURFER": "assets/images/SilverSurfer.jpg", "CYCLOPS": "assets/images/Cyclops.jpg",
+    "WOLVERINE": "assets/images/Wolverine.jpg", "DEADPOOL": "assets/images/Deadpool.jpg",
+    "CAPTAIN MARVEL": "assets/images/CaptainMarvel.jpg", "HAWKEYE": "assets/images/Hawkeye.jpg",
+    "DAREDEVIL": "assets/images/Daredevil.jpg", "HOWARD THE DUCK": "assets/images/HowardtheDuck.jpg",
+    "BLADE": "assets/images/Blade.jpg", "PHIL COULSON": "assets/images/PhilCoulson.jpg",
+    "RONAN THE ACCUSER": "assets/images/RonantheAccuser.jpg", "APOCALYPSE": "assets/images/Apocalypse.jpg",
+    "INCREDIBLE HULK": "assets/images/hulk.jpg" };
+
+    document.getElementById("userWins").src = word[secretWord];
 
      }
 
