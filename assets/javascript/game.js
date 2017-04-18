@@ -25,7 +25,7 @@ function begin (gameStart) {
     var blankWord = [];
     var blankWordStr = "";
     var lettersGuessed = [];
-    var guesses = 12;
+    var guesses = 10;
     var win = 0;
     var gameOver = 0;
 
