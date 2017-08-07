@@ -73,7 +73,7 @@ document.getElementById("userWins").src="";
             	   lettersGuessed = (lettersGuessed + userGuess + " , ");
 
               		// This is verifying the user has enough guesses remaining to continue the game.
-              		// Guesses start at 12.
+              		// Guesses start at 10.
               		if (guesses > 1) {
               			
               			// This section will verify if the user guessed any correct letters and replace them
@@ -154,7 +154,7 @@ function userLosses() {
     document.getElementById("outcomeAgain").innerHTML = "Press any key to try again";
     document.getElementById("lettersGuessed").innerHTML = " ";
     document.getElementById("userWins").src="assets/images/epicfail.jpg";
-    guesses = 12;
+    guesses = 10;
     document.getElementById("guesses").innerHTML = guesses;
     begin("yes");
 }
@@ -169,7 +169,7 @@ function userWins() {
     document.getElementById("outcomeAgain").innerHTML = "Press any key to play agian";
     gameOver = 1;
     document.getElementById("lettersGuessed").innerHTML = " ";
-    guesses = 12;
+    guesses = 10;
     document.getElementById("guesses").innerHTML = guesses;
 
 // This shows the picture if the user guesses the correct secret word
