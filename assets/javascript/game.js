@@ -18,9 +18,7 @@ function begin (gameStart) {
     "GREEN GOBLIN", "HUMAN TORCH", "INVISIBLE WOMAN", "GHOST RIDER", "LUKE CAGE",
     "SILVER SURFER", "CYCLOPS", "WOLVERINE", "DEADPOOL", "CAPTAIN MARVEL", "HAWKEYE",
     "DAREDEVIL", "HOWARD THE DUCK", "BLADE", "PHIL COULSON", "RONAN THE ACCUSER", "APOCALYPSE",
-    "INCREDIBLE HULK", "GAMORA", "BABY GROOT", "ROCKET", "YONDU UDONTA", "KARL MORDO", "KAECILIUS",
-    "BLACK PANTHER", "PROFESSOR X", "BEAST", "WANDA MAXIMOFF", "MISTER FANTASTIC", "GAMBIT",
-    "NIGHTCRAWLER", "PUNISHER", "ICEMAN", "BUCKY BARNES", "COLOSSUS", "EMMA FROST"];
+    "INCREDIBLE HULK", "GAMORA", "BABY GROOT", "ROCKET", "YONDU UDONTA", "KARL MORDO", "KAECILIUS"];
 
 
     var secretWord = options[Math.floor(Math.random() * options.length)];
@@ -200,12 +198,7 @@ var word = { "THE WINTER SOLDIER": "assets/images/TheWinterSoldier.png",
     "INCREDIBLE HULK": "assets/images/hulk.jpg", "GAMORA": "assets/images/Gamora.jpg",
     "BABY GROOT": "assets/images/baby_groot.jpg", "ROCKET": "assets/images/rocket.jpg",
     "YONDU UDONTA": "assets/images/yondu_udonta.png", "KARL MORDO": "assets/images/karl_mordo.jpg",
-    "KAECILIUS": "assets/images/kaecilius.jpg", "BLACK PANTHER": "assets/images/black_panther.jpeg",
-    "PROFESSOR X": "assets/images/professorx.jpg", "BEAST": "assets/images/beast.jpg",
-    "WANDA MAXIMOFF": "assets/images/wanda.jpg", "MISTER FANTASTIC": "assets/images/mrfantastic.jpg",
-    "GAMBIT": "assets/images/gambit.jpg", "NIGHTCRAWLER": "assets/images/nightcrawler.png",
-    "PUNISHER": "assets/images/punisher.jpg", "ICEMAN": "assets/images/iceman.png",
-    "BUCKY BARNES": "assets/images/buckybarnes.png", "COLOSSUS": "assets/images/colossus.jpg", "EMMA FROST": "assets/images/emmafrost.jpg"};
+    "KAECILIUS": "assets/images/kaecilius.jpg"};
 
 
     document.getElementById("userWins").src = word[secretWord];
