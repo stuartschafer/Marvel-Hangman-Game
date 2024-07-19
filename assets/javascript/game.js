@@ -19,7 +19,7 @@ function begin (gameStart) {
     "SILVER SURFER", "CYCLOPS", "WOLVERINE", "DEADPOOL", "CAPTAIN MARVEL", "HAWKEYE",
     "DAREDEVIL", "HOWARD THE DUCK", "BLADE", "PHIL COULSON", "RONAN THE ACCUSER", "APOCALYPSE",
     "INCREDIBLE HULK", "GAMORA", "BABY GROOT", "ROCKET", "YONDU UDONTA", "KARL MORDO", "KAECILIUS,
-    "BLACK PANTHER", "PROFESSOR X", "HUMAN TORCH", "WANDA MAXIMOFF", "MISTER FANTASTIC", "GAMBIT",
+    "BLACK PANTHER", "PROFESSOR X", "BEAST", "WANDA MAXIMOFF", "MISTER FANTASTIC", "GAMBIT",
     "NIGHTCRAWLER", "PUNISHER", "ICEMAN", "BUCKY BARNES", "COLOSSUS", "EMMA FROST"];
 
 
@@ -201,7 +201,7 @@ var word = { "THE WINTER SOLDIER": "assets/images/TheWinterSoldier.png",
     "BABY GROOT": "assets/images/baby_groot.jpg", "ROCKET": "assets/images/rocket.jpg",
     "YONDU UDONTA": "assets/images/yondu_udonta.png", "KARL MORDO": "assets/images/karl_mordo.jpg",
     "KAECILIUS": "assets/images/kaecilius.jpg", "BLACK PANTHER": "assets/images/black_panther.jpeg",
-    "PROFESSOR X": "assets/images/professorx.jpg", "HUMAN TORCH": "assets/images/humantorch.jpeg",
+    "PROFESSOR X": "assets/images/professorx.jpg", "BEAST": "assets/images/beast.jpg",
     "WANDA MAXIMOFF": "assets/images/wanda.jpg", "MISTER FANTASTIC": "assets/images/mrfantastic.jpg",
     "GAMBIT": "assets/images/gambit.jpg", "NIGHTCRAWLER": "assets/images/nightcrawler.png",
     "PUNISHER": "assets/images/punisher.jpg", "ICEMAN": "assets/images/iceman.png",
